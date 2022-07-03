@@ -35,6 +35,7 @@ class Board : public sf::Drawable, public sf::Transformable, private sf::NonCopy
         const std::vector<Game::Move>&      getMovesDone() const;
 
         Game::Position  getGlobalPosFromMouse(const sf::Vector2i& mPos);
+        Game::Position  getLastMovePos() const;        
     
     private:
         // BoardLogic                      mBoardLogic;

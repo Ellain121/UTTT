@@ -106,6 +106,7 @@ class BigGrid : public sf::Drawable, public sf::Transformable
 
         const SmallGrid&                getSmallGrid(int smallGridIndx) const;
         std::vector<Game::Position>     getAvailMoves() const;
+        Game::Move                      getLastMove() const;
     
     private:
         void    updateAvailability();

@@ -127,6 +127,11 @@ void Board::takebackMove()
     mMoves.pop_back();
 }
 
+Game::Position Board::getLastMovePos() const
+{
+    return mGrid.getLastMove().globalPos;
+}
+
 const std::vector<Game::Move>& Board::getMovesDone() const
 {
     return mMoves;

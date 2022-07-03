@@ -458,6 +458,11 @@ std::vector<Game::Position> BigGrid::getAvailMoves() const
 
 }
 
+Game::Move BigGrid::getLastMove() const
+{
+    return mLastMove;
+}
+
 char BigGrid::getWinnerChar()
 {
     char charGrid[3][3];
